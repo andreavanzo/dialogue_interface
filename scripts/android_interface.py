@@ -58,6 +58,7 @@ class AndroidInterface(object):
             print 'Socket now listening on port ' + str(PORT)
             k.learn(BASE_PATH + "en/dialogue_manager.aiml")
             k.learn(BASE_PATH + "en/lexicon.aiml")
+            k.learn(BASE_PATH + "en/outside.aiml")
             #k.learn(BASE_PATH + "en/corridor.aiml")
             #k.learn(BASE_PATH + "en/coffee_machine.aiml")
             #k.learn(BASE_PATH + "en/inside_elevator.aiml")
