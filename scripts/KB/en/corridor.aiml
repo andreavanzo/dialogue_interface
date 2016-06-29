@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--author: Andrea Vanzo -->
+
+<!-- version 0.1 -->
+
+<aiml>
+
+<topic name="CORRIDOR">
+
+<category>
+	<pattern>START</pattern>
+	<template>
+		<random>
+			<li><srai>START1</srai></li>
+			<li><srai>START2</srai></li>
+			<li><srai>START3</srai></li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>START1</pattern>
+	<template><think><set name="request">START1</set></think>Can you open the door for me please?</template>
+</category>
+
+<category>
+	<pattern>POSITIVEANSWER</pattern><that>_ PLEASE</that>
+	<template>Thank you! 
+		<random>
+			<li>You are very kind!</li>
+			<li>You are so kind!</li>
+			<li>It's a pleasure to meet humans like you!</li>
+			<li>I was in trouble and you saved me!</li>
+			<li>How you can imagine, it's quite difficult for me! Thank you again!</li>
+		</random>
+		[STOP]
+	</template>
+</category>
+
+<category>
+	<pattern>NEGATIVEANSWER</pattern><that>_ PLEASE</that>
+	<template>
+		<random>
+			<li>No problem, I will try alone by brute force.</li>
+			<li>I'm sorry you can't. If you need some computation tasks, don't count on me!</li>
+			<li>Ok, no problem. Do you need some calculations? Don't count on me!</li>
+			<li>If you will need some calculations in the future, don't count on me!</li>
+		</random>
+		[STOP]
+	</template>
+</category>
+
+<category>
+	<pattern>START2</pattern>
+	<template><think><set name="request">START2</set><set name="professor"><srai>PROFESSORX</srai></set></think>Excuse me, I'm looking for <get name="professor"/>'s room. Can you escort me over there?</template>
+</category>
+
+<category>
+	<pattern>POSITIVEANSWER</pattern><that>_ THERE</that>
+	<template>Thank you! 
+		<random>
+			<li>I'm new here and you are very kind!</li>
+			<li>You are so kind!</li>
+			<li>It's a pleasure to meet humans like you!</li>
+			<li>I was in trouble and you saved me!</li>
+			<li>I'm new here and I didn't know the <get name="professor"/>'s office location.</li>
+		</random>
+		I will follow you![STOP]
+	</template>
+</category>
+
+<category>
+	<pattern>NEGATIVEANSWER</pattern><that>_ THERE</that>
+	<template>
+		<random>
+			<li>No problem, I can ask to someone else.</li>
+			<li>I'm sorry you can't. If you need some computation tasks, don't count on me!</li>
+			<li>Ok, no problem. Do you need some calculations? Don't count on me!</li>
+			<li>Need calculations? Do it yourself!</li>
+			<li>Ok, I will continue searching for it, making noise with my engines!</li>
+			<li>If you will need some calculations in the future, don't count on me!</li>
+		</random>
+		[STOP]
+	</template>
+</category>
+
+<category>
+	<pattern>START3</pattern>
+	<template><think><set name="request">START3</set></think>Do you know where is the toilette?</template>
+</category>
+
+<category>
+	<pattern>POSITIVEANSWER</pattern><that>_ TOILETTE</that>
+	<template>Can you escort me there?</template>
+</category>
+
+<category>
+	<pattern>NEGATIVEANSWER</pattern><that>_ TOILETTE</that>
+	<template>
+		<random>
+			<li>Ok, thank you anyway.</li>
+			<li>No problem,</li>
+			<li>Since I'm here, I saw you everyday. Anyway, no problem,</li>
+		</random>
+		I will ask to someone else![STOP]
+	</template>
+</category>
+
+<category>
+	<pattern>POSITIVEANSWER</pattern><that>_ THERE</that>
+	<template>Thank you! 
+		<random>
+			<li>I'm new here and you are very kind!</li>
+			<li>You are so kind!</li>
+			<li>It's a pleasure to meet humans like you!</li>
+			<li>I was in trouble and you saved me!</li>
+		</random>
+		I will follow you![STOP]
+	</template>
+</category>
+
+<category>
+	<pattern>NEGATIVEANSWER</pattern><that>_ THERE</that>
+	<template>
+		<random>
+			<li>No problem, I can ask to someone else.</li>
+			<li>I'm sorry you can't. If you need some computation tasks, don't count on me!</li>
+			<li>Ok, no problem. Do you need some calculations? Don't count on me!</li>
+			<li>Need calculations? Do it yourself!</li>
+			<li>Ok, I will continue searching for it, making noise with my engines!</li>
+			<li>If you will need some calculations in the future, don't count on me!</li>
+		</random>
+		[STOP]
+	</template>
+</category>
+
+</topic>
+</aiml>

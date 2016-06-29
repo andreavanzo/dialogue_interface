@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- author: Andrea Vanzo -->
+<!-- Lexicon -->
+<!-- version: 1.0       -->
+<!-- date: 2014-07-10       -->
+
+
+<aiml>
+
+<category>
+	<pattern>PROFESSORX</pattern>
+	<template>
+		<random>
+			<li>Nardi</li>
+			<li>Carlucci</li>
+			<li>PhD</li>
+			<li>Iocchi</li>
+			<li>Grisetti</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>FLOORNUMBERRANDOM</pattern>
+	<template>
+		<random>
+			<li>zero</li>
+			<li>first</li>
+			<li>second</li>
+		</random>
+	</template>
+</category>
+
+<category><pattern>OK</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>OK *</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>* OK</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>* OK *</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>OKAY</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>OKAY *</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>* OKAY</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>* OKAY *</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>YES</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>YES *</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>* YES</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>* YES *</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>YEP</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>YEP *</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>* YEP</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>* YEP *</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>YEAH</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>YEAH *</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>* YEAH</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>* YEAH *</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>CERTAINLY</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>CERTAINLY *</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>* CERTAINLY</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>* CERTAINLY *</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>SURELY</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>SURELY *</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>* SURELY</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>* SURELY *</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>SURE</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>SURE *</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>* SURE</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>* SURE *</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>GLADLY</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>GLADLY *</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>* GLADLY</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>* GLADLY *</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>OF COURSE</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>OF COURSE *</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>* OF COURSE</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+<category><pattern>* OF COURSE *</pattern><template><srai>POSITIVEANSWER</srai></template></category>
+
+<category><pattern>NO</pattern><template><srai>NEGATIVEANSWER</srai></template></category>
+<category><pattern>NO *</pattern><template><srai>NEGATIVEANSWER</srai></template></category>
+<category><pattern>* NO</pattern><template><srai>NEGATIVEANSWER</srai></template></category>
+<category><pattern>* NO *</pattern><template><srai>NEGATIVEANSWER</srai></template></category>
+<category><pattern>NOPE</pattern><template><srai>NEGATIVEANSWER</srai></template></category>
+<category><pattern>NOPE *</pattern><template><srai>NEGATIVEANSWER</srai></template></category>
+<category><pattern>* NOPE</pattern><template><srai>NEGATIVEANSWER</srai></template></category>
+<category><pattern>* NOPE *</pattern><template><srai>NEGATIVEANSWER</srai></template></category>
+<category><pattern>I AM SORRY</pattern><template><srai>NEGATIVEANSWER</srai></template></category>
+<category><pattern>I AM SORRY *</pattern><template><srai>NEGATIVEANSWER</srai></template></category>
+<category><pattern>* I AM SORRY</pattern><template><srai>NEGATIVEANSWER</srai></template></category>
+<category><pattern>* I AM SORRY *</pattern><template><srai>NEGATIVEANSWER</srai></template></category>
+<category><pattern>SORRY</pattern><template><srai>NEGATIVEANSWER</srai></template></category>
+<category><pattern>SORRY *</pattern><template><srai>NEGATIVEANSWER</srai></template></category>
+<category><pattern>* SORRY</pattern><template><srai>NEGATIVEANSWER</srai></template></category>
+<category><pattern>* SORRY *</pattern><template><srai>NEGATIVEANSWER</srai></template></category>
+<category><pattern>* DO NOT *</pattern><template><srai>NEGATIVEANSWER</srai></template></category>
+<category><pattern>* DON'T *</pattern><template><srai>NEGATIVEANSWER</srai></template></category>
+<category><pattern>* CAN NOT *</pattern><template><srai>NEGATIVEANSWER</srai></template></category>
+<category><pattern>* CAN'T *</pattern><template><srai>NEGATIVEANSWER</srai></template></category>
+
+<category><pattern>0</pattern><template><srai>FLOORNUMBER</srai></template></category>
+<category><pattern>1</pattern><template><srai>FLOORNUMBER</srai></template></category>
+<category><pattern>2</pattern><template><srai>FLOORNUMBER</srai></template></category>
+<category><pattern>* 0 *</pattern><template><srai>FLOORNUMBER</srai></template></category>
+<category><pattern>* 1 *</pattern><template><srai>FLOORNUMBER</srai></template></category>
+<category><pattern>* 2 *</pattern><template><srai>FLOORNUMBER</srai></template></category>
+<category><pattern>ZERO</pattern><template><srai>FLOORNUMBER</srai></template></category>
+<category><pattern>* ZERO *</pattern><template><srai>FLOORNUMBER</srai></template></category>
+<category><pattern>ONE</pattern><template><srai>FLOORNUMBER</srai></template></category>
+<category><pattern>* ONE</pattern><template><srai>FLOORNUMBER</srai></template></category>
+<category><pattern>ONE *</pattern><template><srai>FLOORNUMBER</srai></template></category>
+<category><pattern>* ONE *</pattern><template><srai>FLOORNUMBER</srai></template></category>
+<category><pattern>TWO</pattern><template><srai>FLOORNUMBER</srai></template></category>
+<category><pattern>TWO *</pattern><template><srai>FLOORNUMBER</srai></template></category>
+<category><pattern>* TWO</pattern><template><srai>FLOORNUMBER</srai></template></category>
+<category><pattern>* TWO *</pattern><template><srai>FLOORNUMBER</srai></template></category>
+<category><pattern>FIRST</pattern><template><srai>FLOORNUMBER</srai></template></category>
+<category><pattern>FIRST *</pattern><template><srai>FLOORNUMBER</srai></template></category>
+<category><pattern>* FIRST</pattern><template><srai>FLOORNUMBER</srai></template></category>
+<category><pattern>* FIRST *</pattern><template><srai>FLOORNUMBER</srai></template></category>
+<category><pattern>SECOND</pattern><template><srai>FLOORNUMBER</srai></template></category>
+<category><pattern>SECOND *</pattern><template><srai>FLOORNUMBER</srai></template></category>
+<category><pattern>* SECOND</pattern><template><srai>FLOORNUMBER</srai></template></category>
+<category><pattern>* SECOND *</pattern><template><srai>FLOORNUMBER</srai></template></category>
+<category><pattern>* ZERO FLOOR *</pattern><template><srai>FLOORNUMBER</srai></template></category>
+<category><pattern>* FIRST FLOOR *</pattern><template><srai>FLOORNUMBER</srai></template></category>
+<category><pattern>* SECOND FLOOR *</pattern><template><srai>FLOORNUMBER</srai></template></category>
+<category><pattern>* FLOOR *</pattern><template><srai>FLOORNUMBER</srai></template></category>
+
+
+</aiml>

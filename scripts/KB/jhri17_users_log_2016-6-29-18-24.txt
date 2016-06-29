@@ -1,0 +1,20 @@
+UserId: 0 =
+Answer: 
+{"hypotheses":[{"transcription":"hello","confidence":0.982907,"rank":0}]}
+UserId: 0 ----------------
+
+UserId: 1 =
+Answer: 
+{"hypotheses":[{"transcription":"hi","confidence":0.90470415,"rank":0},{"transcription":"high","confidence":0.0,"rank":1},{"transcription":"hey","confidence":0.0,"rank":2},{"transcription":"HY","confidence":0.0,"rank":3},{"transcription":"Hai","confidence":0.0,"rank":4}]}
+UserId: 1 ----------------
+
+UserId: 2 =
+Answer: 
+{"hypotheses":[{"transcription":"hello","confidence":0.982907,"rank":0}]}
+UserId: 2 ----------------
+
+UserId: 3 =
+Answer: 
+{"hypotheses":[{"transcription":"Francesca is gay","confidence":0.8148009,"rank":0},{"transcription":"Francesco is gay","confidence":0.2806521,"rank":1},{"transcription":"Francesca's gay","confidence":0.0,"rank":2},{"transcription":"francesco's gay","confidence":0.0,"rank":3},{"transcription":"francesco's Gaye","confidence":0.0,"rank":4}]}
+UserId: 3 ----------------
+

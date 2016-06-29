@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--author: Andrea Vanzo -->
+
+<!-- version 0.1 -->
+
+<aiml>
+
+<category>
+	<pattern>COFFEE</pattern>
+	<template><think><set name="topic">COFFEE</set></think></template>
+</category>
+
+<category>
+	<pattern>CORRIDOR</pattern>
+	<template><think><set name="topic">CORRIDOR</set></think></template>
+</category>
+
+<category>
+	<pattern>INSIDE</pattern>
+	<template><think><set name="topic">INSIDE</set></think></template>
+</category>
+
+<category>
+	<pattern>OUTSIDE</pattern>
+	<template><think><set name="topic">OUTSIDE</set></think></template>
+</category>
+
+<category>
+	<pattern>PRINTER</pattern>
+	<template><think><set name="topic">PRINTER</set></think></template>
+</category>
+
+<category>
+	<pattern>GETATTENTION</pattern>
+	<template>
+		[SAY]
+		<random>
+			<li>[SAY]Hey, I'm talking to you!</li>
+			<li>[SAY]Please, could you come here?</li>
+			<li>[SAY]I'm sorry! Can I ask you a question?</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>*</pattern>
+	<template>
+		<random>
+			<li>[SAY]Sorry, I didn't understand.</li>
+			<li>[SAY]I'm sorry, I didn't get it.</li>
+			<li>[SAY]I'm sorry, try to speak slowly and clearly.</li>
+		</random>
+		<srai><get name="request"/></srai>
+	</template>
+</category>
+
+</aiml>

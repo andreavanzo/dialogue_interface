@@ -1,0 +1,25 @@
+<launch>
+        <arg name="robot_name" default="turtlebot" />
+        <arg name="derial_device" default="/dev/ttyUSB0" />
+        <arg name="joy_device" default="/dev/input/js0" />
+        <arg name="server_port" default="5000" />
+        <arg name="aiml_base_path" default="/home/pi/catkin_ws/src/dialogue_interface/scripts/KB/" />
+        <arg name="user_id" default="0"/>
+
+        <!--LAUNCH DIALOG INTERFACE-->
+	      <include file="$(find dialogue_interface)/launch/dialogue_interface.launch">
+                 <arg name="server_port" value="$(arg server_port)"/>	
+                 <arg name="user_id" value="$(arg user_id)"/>
+                 <arg name="aiml_base_path" value="$(arg aiml_base_path)" />
+        </include>
+
+        <!--LAUNCH BASE-->
+        <node name="thin_kobuki" pkg="thin_kobuki" type="thin_kobuki_node">
+              <param name="derial_device" value="$(arg derial_device)"/>
+        </node>
+
+        <!--LAUNCH JOY-->
+        <node name="thin_joystick_teleop" pkg="thin_joystick_teleop" type="joy_teleop_node">
+              <param name="joy_device" value="$(arg joy_device)"/>
+        </node>
+</launch>

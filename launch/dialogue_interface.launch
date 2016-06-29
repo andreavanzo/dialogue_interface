@@ -1,0 +1,15 @@
+<launch>
+	<arg name="robot_name" default="turtlebot0" />
+	<arg name="server_port" default="5000" />
+  <!--arg name="env" default="COFFEE" /-->
+	<arg name="aiml_base_path" default="/home/pi/catkin_ws/src/dialogue_interface/scripts/KB/" />
+	<arg name="user_id" default="0" />
+
+		<node name="android_interface" pkg="dialogue_interface" type="android_interface.py" output="screen"> 
+			<param name="robot_name" value="$(arg robot_name)"/>
+      <!--param name="environment" value="$(arg env)"/-->
+			<param name="server_port" value="$(arg server_port)"/>
+			<param name="aiml_base_path" value="$(arg aiml_base_path)"/>
+		</node>
+
+</launch>

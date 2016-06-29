@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--author: Andrea Vanzo -->
+
+<!-- version 0.1 -->
+
+<aiml>
+
+<topic name="INSIDE">
+
+<category>
+	<pattern>START</pattern>
+	<template>
+		<random>
+			<li><srai>START1</srai></li>
+			<li><srai>START2</srai></li>
+			<li><srai>START3</srai></li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>START1</pattern>
+	<template><think><set name="request">START1</set></think>On which floor am I right now?</template>
+</category>
+
+<category>
+	<pattern>FLOORNUMBER</pattern><that>_ NOW</that>
+	<template>Thank you! 
+		<random>
+			<li>Well, it's not my destination!</li>
+			<li>So, my elevator ride continues.</li>
+		</random>
+		See you!
+	</template>
+</category>
+
+<category>
+	<pattern>NEGATIVEANSWER</pattern><that>_ NOW</that>
+	<template>
+		<random>
+			<li>No problem.</li>
+			<li>No problem, I will jump from the window to measure the distance to the ground.</li>
+			<li>No problem, I can push you outside the window to measure the distance to the ground.</li>
+			<li>Do you know the Newton's law? So, get an apple and tell me the floor.</li>
+			<li>If you will need some calculations in the future, don't count on me!</li>
+			<li>If you need some computation tasks, don't count on me!</li>
+			<li>Ok, no problem. Do you need some calculations? Don't count on me!</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>START2</pattern>
+	<template><think><set name="request">START2</set></think>Which floor are you going?</template>
+</category>
+
+<category>
+	<pattern>FLOORNUMBER</pattern><that>_ GOING</that>
+	<template>
+		<random>
+			<li>Well, it's not my destination!</li>
+			<li>Wow, it's my destination!</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>NEGATIVEANSWER</pattern><that>_ GOING</that>
+	<template>No problem.
+		<random>
+			<li></li>
+			<li>I was curious.</li>
+			<li>Keep the secret for yourself!</li>
+			<li>I will ask my robot friend from the FBI for it.</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>START3</pattern>
+	<template><think><set name="request">START3</set></think>Can you push the <srai>FLOORNUMBERRANDOM</srai> floor button for me?</template>
+</category>
+
+<category>
+	<pattern>POSITIVEANSWER</pattern><that>_ ME</that>
+	<template>Thank you! 
+		<random>
+			<li>You are very kind!</li>
+			<li>You are so kind!</li>
+			<li>It's a pleasure to meet humans like you!</li>
+			<li>I was in trouble and you saved me!</li>
+			<li>How you can imagine, it's quite difficult for me! Thank you again!</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>NEGATIVEANSWER</pattern><that>_ ME</that>
+	<template>
+		<random>
+			<li>No problem, I can ask to someone else.</li>
+			<li>I'm sorry you can't. If you need some computation tasks, don't count on me!</li>
+			<li>Ok, no problem. Do you need some calculations? Don't count on me!</li>
+			<li>Need calculations? Do it yourself!</li>
+			<li>If you will need some calculations in the future, don't count on me!</li>
+		</random>
+	</template>
+</category>
+
+</topic>
+</aiml>

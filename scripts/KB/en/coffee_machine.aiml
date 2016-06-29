@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--author: Andrea Vanzo -->
+
+<!-- version 0.1 -->
+
+<aiml>
+
+<topic name="COFFEE">
+
+<category>
+	<pattern>START</pattern>
+	<template>
+		<random>
+			<li><srai>START4</srai></li>
+			<!--<li><srai>START2</srai></li>
+			<li><srai>START3</srai></li>-->
+		</random>
+	</template>
+</category>
+
+<!--
+<category>
+	<pattern>START1</pattern>
+	<template><think><set name="request">START1</set></think>Can you buy a coffee for me? Money is on the tray, thank you!</template>
+</category>
+
+<category>
+	<pattern>POSITIVEANSWER</pattern><that>_ YOU</that>
+	<template>Thank you! 
+		<random>
+			<li>You are very kind!</li>
+			<li>You are so kind!</li>
+			<li>It's a pleasure to meet humans like you!</li>
+			<li>I was in trouble and you saved me!</li>
+		</random>
+		Once you finished, put the coffee on the tray! Have a nice day!
+		[STOP]
+	</template>
+</category>
+
+<category>
+	<pattern>NEGATIVEANSWER</pattern><that>_ YOU</that>
+	<template>
+		<random>
+			<li>No problem, I will sleep here, close to you!</li>
+			<li>I'm sorry you can't. If you need some computation tasks, don't count on me!</li>
+			<li>Ok, no problem. Do you need some calculations? Don't count on me!</li>
+			<li>If you will need some calculations in the future, don't count on me!</li>
+		</random>
+		[STOP]
+	</template>
+</category>
+
+<category>
+	<pattern>START2</pattern>
+	<template><think><set name="request">START2</set></think>Do you know if today there is any robotics class?</template>
+</category>
+
+<category>
+	<pattern>POSITIVEANSWER</pattern><that>_ CLASS</that>
+	<template>Thank you! 
+		<random>
+			<li>You are very kind!</li>
+			<li>You are so kind!</li>
+		</random>
+		Can you tell me where I can find it?
+	</template>
+</category>
+
+<category>
+	<pattern>NEGATIVEANSWER</pattern><that>_ CLASS</that>
+	<template>Ok. Can you please check on the monitor for me?</template>
+</category>
+
+<category>
+	<pattern>POSITIVEANSWER</pattern><that>_ ME</that>
+	<template>Thank you! 
+		<random>
+			<li>You are very kind!</li>
+			<li>You are so kind!</li>
+			<li>I was in trouble and you saved me!</li>
+		</random>
+		I will wait here.
+		[STOP]
+	</template>
+</category>
+
+<category>
+	<pattern>* ROOM *</pattern><that>_ IT</that>
+	<template>Thank you! 
+		<random>
+			<li>You are very kind!</li>
+			<li>You are so kind!</li>
+			<li>It's a pleasure to meet humans like you!</li>
+			<li>I was in trouble and you saved me!</li>
+		</random>
+		[STOP]
+	</template>
+</category>
+
+<category>
+	<pattern>* ROOM *</pattern><that>_ HERE</that>
+	<template>Thank you! 
+		<random>
+			<li>You are very kind!</li>
+			<li>You are so kind!</li>
+			<li>It's a pleasure to meet humans like you!</li>
+		</random>
+		Have a nice day![STOP]
+	</template>
+</category>
+
+<category>
+	<pattern>ROOM *</pattern><that>_ IT</that>
+	<template>Thank you! 
+		<random>
+			<li>You are very kind!</li>
+			<li>You are so kind!</li>
+			<li>It's a pleasure to meet humans like you!</li>
+			<li>I was in trouble and you saved me!</li>
+		</random>
+		[STOP]
+	</template>
+</category>
+
+<category>
+	<pattern>ROOM *</pattern><that>_ HERE</that>
+	<template>Thank you! 
+		<random>
+			<li>You are very kind!</li>
+			<li>You are so kind!</li>
+			<li>It's a pleasure to meet humans like you!</li>
+		</random>
+		Have a nice day![STOP]
+	</template>
+</category>
+
+<category>
+	<pattern>NEGATIVEANSWER</pattern><that>_ ME</that>
+	<template>
+		<random>
+			<li>No problem, I will ask to someone else!</li>
+			<li>I'm sorry you can't. If you need some computation tasks, don't count on me!</li>
+			<li>Ok, no problem. Do you need some calculations? Don't count on me!</li>
+			<li>If you will need some calculations in the future, don't count on me!</li>
+		</random>
+		[STOP]
+	</template>
+</category>
+
+<category>
+	<pattern>START3</pattern>
+	<template><think><set name="request">START3</set></think>I've tried this coffee and I didn't like it. Can you help me to find a <random><li>bar</li><li>coffee shop</li></random> in the surroundings?</template>
+</category>
+
+<category>
+	<pattern>POSITIVEANSWER</pattern><that>_ SURROUNDINGS</that>
+	<template>Thank you! 
+		<random>
+			<li>You are very kind!</li>
+			<li>You are so kind!</li>
+			<li>It's a pleasure to meet humans like you!</li>
+			<li>I was falling asleep and you saved me!</li>
+		</random>
+		But... my creators are coming and I'm not authorized to go outside. Thank you anyway!
+		[STOP]
+	</template>
+</category>
+
+<category>
+	<pattern>NEGATIVEANSWER</pattern><that>_ SURROUNDINGS</that>
+	<template>
+		<random>
+			<li>No problem, I will sleep here, close to you!</li>
+			<li>I'm sorry you can't. If you need some computation tasks, don't count on me!</li>
+			<li>Ok, no problem. Do you need some calculations? Don't count on me!</li>
+			<li>If you will need some calculations in the future, don't count on me!</li>
+		</random>
+		[STOP]
+	</template>
+</category>-->
+
+<category>
+	<pattern>START4</pattern>
+	<template><think><set name="request">START3</set></think>My batteries are running low. Can you please plug the power cable?</template>
+</category>
+
+<category>
+	<pattern>POSITIVEANSWER</pattern><that>_ CABLE</that>
+	<template>Thank you! 
+		<random>
+			<li>You are very kind!</li>
+			<li>You are so kind!</li>
+			<li>It's a pleasure to meet humans like you!</li>
+			<li>I was falling asleep and you saved me!</li>
+			<li>I was feeling pretty tired!</li>
+			<li>I was pretty tired!</li>
+		</random>
+		[STOP]
+	</template>
+</category>
+
+<category>
+	<pattern>NEGATIVEANSWER</pattern><that>_ CABLE</that>
+	<template>
+		<random>
+			<li>No problem, I will sleep here, close to you!</li>
+			<li>I'm sorry you can't. If you need some computation tasks, don't count on me!</li>
+			<li>Ok, no problem. Do you need some calculations? Don't count on me!</li>
+			<li>If you will need some calculations in the future, don't count on me!</li>
+		</random>
+		[STOP]
+	</template>
+</category>
+
+<!--
+<category>
+	<pattern>START4</pattern>
+	<template>How was your coffee?</template>
+</category>
+
+<category>
+	<pattern>START5</pattern>
+	<template>Why are you having a coffee at this time? Don't you have any classes?</template>
+</category>
+
+<category>
+	<pattern>START6</pattern>
+	<template>So, you need a coffee. Are you sleepy?</template>
+</category>
+-->
+
+</topic>
+</aiml>
