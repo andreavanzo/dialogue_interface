@@ -23,7 +23,7 @@
 </category>
 
 <category>
-	<pattern>POSITIVEANSWER</pattern><that>_ ME</that>
+	<pattern>POSITIVEANSWER</pattern><that>_ BIN</that>
 	<template>[SAY]Thank you! 
 		<random>
 			<li>You are very kind!</li>
@@ -36,7 +36,7 @@
 </category>
 
 <category>
-	<pattern>NEGATIVEANSWER</pattern><that>_ ME</that>
+	<pattern>NEGATIVEANSWER</pattern><that>_ BIN</that>
 	<template>[SAY]
 		<random>
 			<li>I'm sorry you can't. If you need some computation tasks, don't count on me!</li>
