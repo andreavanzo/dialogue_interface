@@ -16,6 +16,7 @@ import sys
 import socket
 import aiml
 import datetime
+import json
 
 ###  Variables  ###
 k = aiml.Kernel()
@@ -112,20 +113,10 @@ class AndroidInterface(object):
                         if currentFragment == "JOY":
                             print data
                         elif currentFragment == "SLU":
-                            if data.startswith('PROX:'):
-                                splitted = data.split(":")
-                                k.respond(splitted[1])
-                                self.reply = k.respond('START')
-                                conn.send(self.reply + '\n')
-                                print 'proxemics ' + data
-                            elif data.startswith('{'):
-                                print 'Log: ' + data
-                            else:
-                                self.collaboration = data
-                                print 'You said:' + data
-                                self.reply = k.respond(data)
-                                print 'Robot said:' + self.reply
-                                conn.send(self.reply + '\n')
+                            transcriptions = json.loads(data)
+                            best_hypo = transcriptions['hypotheses'][0]['transcription']
+                            reply = k.respond(best_hypo)
+                            conn.send(reply + '\n')
                     else:
                         print 'Disconnected from ' + addr[0] + ':' + str(addr[1])
                         break
