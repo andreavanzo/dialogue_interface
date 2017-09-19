@@ -36,9 +36,9 @@
 	<template>
 		[SAY]
 		<random>
-			<li>[SAY]Hey, I'm talking to you!</li>
-			<li>[SAY]Please, could you come here?</li>
-			<li>[SAY]I'm sorry! Can I ask you a question?</li>
+			<li>Hey, I'm talking to you!</li>
+			<li>Please, could you come here?</li>
+			<li>I'm sorry! Can I ask you a question?</li>
 		</random>
 	</template>
 </category>
@@ -46,10 +46,11 @@
 <category>
 	<pattern>*</pattern>
 	<template>
+		[SAY]
 		<random>
-			<li>[SAY]Sorry, I didn't understand.</li>
-			<li>[SAY]I'm sorry, I didn't get it.</li>
-			<li>[SAY]I'm sorry, try to speak slowly and clearly.</li>
+			<li>Sorry, I didn't understand.</li>
+			<li>I'm sorry, I didn't get it.</li>
+			<li>I'm sorry, try to speak slowly and clearly.</li>
 		</random>
 		<srai><get name="request"/></srai>
 	</template>

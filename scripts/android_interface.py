@@ -64,7 +64,7 @@ class AndroidInterface(object):
             #k.learn(BASE_PATH + "en/outside_elevator.aiml")
             #k.learn(BASE_PATH + "en/printer.aiml")
             # k.respond(rospy.get_param('/android_interface/environment'))
-            k.respond("JHRI17_ENV")
+            k.respond("OUTSIDE")
 
 
             rospy.init_node('dialogue_interface_node', anonymous=True)
