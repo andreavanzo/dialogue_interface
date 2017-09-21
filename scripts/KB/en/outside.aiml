@@ -31,7 +31,7 @@
 			<li>It's a pleasure to meet humans like you!</li>
 			<li>How you can imagine, it's quite difficult for me! Thank you again!</li>
 		</random>
-		[STOP]
+		[QUE]
 	</template>
 </category>
 
@@ -42,7 +42,7 @@
 			<li>I'm sorry you can't. If you need some computation tasks, don't count on me!</li>
 			<li>Ok, no problem. Do you need some calculations? Don't count on me!</li>
 		</random>
-		[STOP]
+		[QUE]
 	</template>
 </category>
 
