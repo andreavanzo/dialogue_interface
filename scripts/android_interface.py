@@ -113,10 +113,13 @@ class AndroidInterface(object):
                         if currentFragment == "JOY":
                             print data
                         elif currentFragment == "SLU":
-                            transcriptions = json.loads(data)
-                            best_hypo = transcriptions['hypotheses'][0]['transcription']
-                            reply = k.respond(best_hypo)
-                            conn.send(reply + '\n')
+                            if data.startswith('[LOG]'):
+                                print 'Log: ' + data
+                            else:
+                                transcriptions = json.loads(data)
+                                best_hypo = transcriptions['hypotheses'][0]['transcription']
+                                reply = k.respond(best_hypo)
+                                conn.send(reply + '\n')
                     else:
                         print 'Disconnected from ' + addr[0] + ':' + str(addr[1])
                         break
